@@ -32,7 +32,8 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 DATABASES = {
     'default': dj_database_url.config(default=config('DATABASE_URL'))}
 
-ALLOWED_HOSTS = ['face-recognition-attm.herokuapp.com']
+ALLOWED_HOSTS = ['face-recognition-attm.herokuapp.com',
+                 '127.0.0.1',]
 
 
 # Application definition

@@ -18,6 +18,7 @@ from django.urls import path
 from django.conf.urls import url,include
 from isFace import views
 urlpatterns = [
+    path('',views.homePage,name='hp'),
     path('isFace/',include('isFace.urls')),
     path('admin/', admin.site.urls),
 ]

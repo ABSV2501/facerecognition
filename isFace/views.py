@@ -9,3 +9,6 @@ def isface(request):
     #return HttpResponse("<em>Test</em>")
     data = json.dumps(obj)
     return HttpResponse(data,content_type='application/json')
+
+def homePage(request):
+    return HttpResponse("WELCOME TO HOMEPAGE")
